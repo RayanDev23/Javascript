@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function sayMessage(msg)
+        {
+            alert (msg);
+        }
+
+
+        function sayHELLO() 
+        {
+            sayMessage ("Début du programme : Année bissextile");
+            
+        }
+
+        function sayGOODBYE() 
+        {
+            sayMessage ("Fin du programme : Année bissextile");
+            
+        }
+
+        function isEven(nb)
+        {
+            if(nb%2 === 0){
+                
+            } else{
+                
+            }
+        }
+
+        function countDown(nb)
+        {
+            while (nb>=0) {
+                console.log (nb);
+                nb = nb - 1;
+            }
+        }
+
+
+        function estBissextile(annee)
+        {
+            if((annee % 4 === 0 && annee % 100 !== 0) || annee % 400 === 0) {
+                return true;
+            } else{
+                return false;
+            }
+        }
+
+        const annee = 2028;
+    if (estBissextile(annee)) {
+    console.log(annee + " est une année bissextile.");
+}   else {
+    console.log(annee + " n'est pas une année bissextile.");
+}
+
+
+        function main() 
+        {
+            sayHELLO(2020);
+            isEven(2);
+            isEven(3);
+            countDown(10);
+            sayGOODBYE(2021);
+        }
+
+        main();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
